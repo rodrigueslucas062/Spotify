@@ -35,7 +35,7 @@ const renderMainPlay = () => {
                         </a>
                         <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
                             <Image src={Samurai} alt="Capa playlist" width={90} height={90} />
-                            <strong>Chippin' In</strong>
+                            <strong>Chippin In</strong>
                             <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
                                 <Play fill="black" />
                             </button>
@@ -94,8 +94,8 @@ const renderMainPlay = () => {
                             </a>
                             <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
                                 <Image className="w-auto" src={Samurai} alt="Capa playlist" width={190} height={190} />
-                                <strong className="font-semi-bold">Chippin' in</strong>
-                                <span className="text-sm text-zinc-500">Chippin' in, de Samurai</span>
+                                <strong className="font-semi-bold">Chippin in</strong>
+                                <span className="text-sm text-zinc-500">Chippin in, de Samurai</span>
                             </a>
                             <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
                                 <Image className="w-auto" src={Tdi} alt="Capa playlist" width={190} height={190} />

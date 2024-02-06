@@ -8,7 +8,7 @@ const renderFooter = () => {
             <div className="flex items-center gap-3">
                 <Image src={Samurai} alt="Capa playlist" width={60} height={60} />
                 <div className="flex flex-col gap-1">
-                    <strong className="font-normal">Chippin' In</strong>
+                    <strong className="font-normal">Chippin In</strong>
                     <span className="text-xs text-zinc-400">Samurai</span>
                 </div>
             </div>
