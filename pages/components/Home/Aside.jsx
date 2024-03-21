@@ -1,5 +1,5 @@
 import Link from "next/link";
-const { HomeIcon, Search, Library, GalleryThumbnails, Gamepad2, QrCode, } = require("lucide-react")
+const { HomeIcon, Search, Library, GalleryThumbnails, Gamepad2, QrCode, Heart, Music, } = require("lucide-react")
 
 const renderAside = () => {
     return (
@@ -25,17 +25,17 @@ const renderAside = () => {
             <div className="flex-grow bg-neutral-900 space-y-1 p-2 rounded-b-lg">
                 <div className="flex flex-col gap-3">
                     <Link href="/whiteboard" className="flex rounded-md items-center gap-4 p-2 overflow-hidden group hover:bg-zinc-800 transition-colors">
-                        <GalleryThumbnails />Músicas curtidas
+                        <Heart />Músicas curtidas
                     </Link>
                 </div>
                 <div className="flex flex-col gap-3">
                     <Link href="/personagem" className="flex rounded-md items-center gap-4 p-2 overflow-hidden group hover:bg-zinc-800 transition-colors">
-                        <Gamepad2 />Playlist
+                        <Music />Playlist
                     </Link>
                 </div>
                 <div className="flex flex-col gap-3">
                     <Link href="/personagem" className="flex rounded-md items-center gap-4 p-2 overflow-hidden group hover:bg-zinc-800 transition-colors">
-                        <QrCode />Playlist 2
+                        <Music />Playlist 2
                     </Link>
                 </div>
             </div>
