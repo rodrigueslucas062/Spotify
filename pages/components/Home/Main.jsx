@@ -1,13 +1,12 @@
 import Image from "next/image"
-import Curtidas from "../../../public/images/album/curtidas.jpg"
 import Samurai from "../../../public/images/album/chippin-in.jpg"
 import RiseRise from "../../../public/images/album/rise-rise.jpg"
 import Tdi from "../../../public/images/album/the-devil-in-i.jpg"
 import Archive from "../../../public/images/album/archive.jpg"
 import Aderal from "../../../public/images/album/aderal.jpg"
-import { Play } from "lucide-react"
 import { saudacao } from "../../../utils/saudacao"
 import NavButton from "../../../utils/navegacao/NavButton"
+import RecentCard from "../Layouts/Cards/RecentCards"
 
 const renderMainPlay = () => {
     const avatarUrl = 'https://avatars.githubusercontent.com/u/39422637?s=400&u=b6bddbc97edde098ad4d50599d99479aff0cb6d9&v=4';
@@ -23,51 +22,9 @@ const renderMainPlay = () => {
                         alt="GitHub avatar"
                         className="w-10 h-10 rounded-full" />
                 </div>
-                <h1 className="font-bold text-3xl mt-10 gap-4 mb-3">{saudacao()}</h1>
-                <div className="grid grid-cols-3 gap-4">
-                    <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
-                        <Image src={Curtidas} alt="Capa playlist" width={90} height={90} />
-                        <strong>Músicas Curtidas</strong>
-                        <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
-                            <Play fill="black" />
-                        </button>
-                    </a>
-                    <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
-                        <Image src={Samurai} alt="Capa playlist" width={90} height={90} />
-                        <strong>Chippin In</strong>
-                        <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
-                            <Play fill="black" />
-                        </button>
-                    </a>
-                    <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
-                        <Image src={RiseRise} alt="Capa playlist" width={90} height={90} />
-                        <strong>Rise, Rise</strong>
-                        <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
-                            <Play fill="black" />
-                        </button>
-                    </a>
-                    <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
-                        <Image src={Tdi} alt="Capa playlist" width={90} height={90} />
-                        <strong>The Devil In I</strong>
-                        <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
-                            <Play fill="black" />
-                        </button>
-                    </a>
-                    <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
-                        <Image src={Archive} alt="Capa playlist" width={90} height={90} />
-                        <strong>Bullets</strong>
-                        <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
-                            <Play fill="" />
-                        </button>
-                    </a>
-                    <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
-                        <Image src={Aderal} alt="Capa playlist" width={90} height={90} />
-                        <strong>Aderal</strong>
-                        <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
-                            <Play fill="black" />
-                        </button>
-                    </a>
-                </div>
+
+                <h1 className="font-bold text-3xl mt-2 gap-4 mb-3">{saudacao()}</h1>
+                <RecentCard />
                 <h2 className="font-bold text-2xl mt-10">Feito para você</h2>
                 <div className="ml-4">
                     <div className="grid grid-cols-6 gap-4 mt-4">
