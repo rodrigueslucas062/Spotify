@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-zinc-800;
+  @apply bg-zinc-950;
   @apply text-zinc-50;
 }
 
 @import "./variables/variables.scss";
-@import "../styles/scss/layouts/layouts.scss";
 @import "../styles/scss/components/buttons.scss";

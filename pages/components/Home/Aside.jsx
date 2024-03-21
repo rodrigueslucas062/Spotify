@@ -3,14 +3,14 @@ const { HomeIcon, Search, Library, GalleryThumbnails, Gamepad2, QrCode, } = requ
 
 const renderAside = () => {
     return (
-        <aside className="aside__area flex-2">
+        <aside className="flex flex-col justify-between w-[288px] flex-2">
             <div className="bg-zinc-950 space-y-3">
-                <div className="aside_menu space-y-1">
-                    <Link href="" className="text-xs font-semibold text-zinc-300 hover:text-neutral-50">
+                <div className="bg-zinc-800 rounded-md space-y-1">
+                    <Link href="" className="flex items-center p-3 gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
                         <HomeIcon />
                         Home
                     </Link>
-                    <Link href="" className="text-xs font-semibold text-zinc-300 hover:text-neutral-50">
+                    <Link href="" className="flex items-center p-3 gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
                         <Search />
                         Pesquisar
                     </Link>
@@ -23,18 +23,18 @@ const renderAside = () => {
                 </Link>
             </div>
             <div className="flex-grow bg-neutral-900 space-y-1 p-2 rounded-b-lg">
-                <div className="aside_item">
-                    <Link href="/whiteboard" className="group hover:bg-zinc-800 transition-colors">
+                <div className="flex flex-col gap-3">
+                    <Link href="/whiteboard" className="flex rounded-md items-center gap-4 p-2 overflow-hidden group hover:bg-zinc-800 transition-colors">
                         <GalleryThumbnails />Músicas curtidas
                     </Link>
                 </div>
-                <div className="aside_item">
-                    <Link href="/personagem" className="group overflow-hidden hover:bg-zinc-800 transition-colors">
+                <div className="flex flex-col gap-3">
+                    <Link href="/personagem" className="flex rounded-md items-center gap-4 p-2 overflow-hidden group hover:bg-zinc-800 transition-colors">
                         <Gamepad2 />Playlist
                     </Link>
                 </div>
-                <div className="aside_item">
-                    <Link href="/personagem" className="group overflow-hidden hover:bg-zinc-800 transition-colors">
+                <div className="flex flex-col gap-3">
+                    <Link href="/personagem" className="flex rounded-md items-center gap-4 p-2 overflow-hidden group hover:bg-zinc-800 transition-colors">
                         <QrCode />Playlist 2
                     </Link>
                 </div>
